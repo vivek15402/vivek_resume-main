@@ -1,0 +1,1178 @@
+/* Import PT Sans and fjalla One font family from google fonts*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Sans&display=swap'); */
+
+@font-face {
+	font-family: 'PT Sans';
+	src: url(../fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Fjalla One';
+	src: url(../fonts/FjallaOne-Regular.ttf);
+}
+
+/* defining variable */
+
+:root{
+	--profile_resume_hexagon_color: #00bfff;
+	--portfolio_contact_hexagon_color: #d147a3;
+}
+
+/* Defualt styling of multiple basic tags */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+li,
+footer,
+header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 35px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 32px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* List style to none */
+
+ol,
+ul {
+	list-style: none;
+}
+
+/* Body styling */
+
+html, body {
+	height: 100%;
+	margin:0;
+}
+
+body {
+	/* background: url('../images/bg.jpg') 50% 50% fixed; */
+	background: url('../images/bg.jpg') no-repeat center center fixed;
+	/* background: #615f55; */
+	color: #d9d9d9;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
+
+/* Hexagons Making Styling */
+
+.hexagon {
+	width: 204px;
+	height: 236px;
+	overflow: hidden;
+	visibility: hidden;
+	float: left;
+	display: block;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+.hexagon div.hexagon-in1 {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+.hexagon div.hexagon-in2 {
+	color: #fff;
+	overflow: hidden;
+	visibility: visible;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+.hexagon .inner {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	visibility: hidden;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.hexagon a {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	visibility: visible;
+	display: block;
+	padding-top: 84px;
+	text-decoration: none;
+	-webkit-transition: padding 0.2s ease;
+	-moz-transition: padding 0.2s ease;
+	-o-transition: padding 0.2s ease;
+	transition: padding 0.2s ease;
+}
+
+.hexagon a i {
+	font-size: 70px;
+	display: block;
+}
+
+/* Hexagons Making Styling end */
+
+/* Header Hexagons & all Styling */
+
+.portfolio,
+.contact {
+	margin: 168px 0 0 -43px;
+}
+
+.portfolio .hexagon-in2,
+.portfolio a,
+.contact .hexagon-in2,
+.contact a {
+	/* background: #ff9000; */
+	/* background: #33adff; */
+	/* background: #1ad1ff; */
+	background: var(--portfolio_contact_hexagon_color);
+}
+
+.contact {
+	margin: 168px -43px 0 -28px;
+}
+
+.profile,
+.resume {
+	margin: 66px 0 0 -28px;
+}
+
+.profile .hexagon-in2,
+.profile a,
+.resume .hexagon-in2,
+.resume a {
+	/* background: #db5800; */
+	/* background: #0099ff; */
+	/* background: #00a3cc; */
+	/* background: #b82e8a; */
+	background: var(--profile_resume_hexagon_color);
+}
+
+.userpic {
+	margin: -36px 0 0 -28px;
+}
+
+.userpic a {
+	padding: 0 !important;
+}
+
+.userpic a img {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	margin: 16px 0 0 -16px;
+}
+
+svg{
+	width: 71px;
+}
+
+
+/* Header Hexagons & all Styling End*/
+
+/* Footer Hexagons & all Styling */
+
+.linkedin,
+.github {
+	margin: 0 0 0 -43px;
+}
+
+.linkedin .hexagon-in2,
+.linkedin a,
+.github .hexagon-in2,
+.github a {
+	/* background: #f0c600; */
+	background: #ffa31a;
+	-webkit-transition: background 0.3s ease;
+	-webkit-transition: background 0.3s !important;
+	-moz-transition: background 0.3s ease !important;
+	-o-transition: background 0.3s ease !important;
+	transition: background 0.3s ease !important;
+}
+
+.linkedin .hexagon-in2:hover,
+.linkedin a:hover,
+.github .hexagon-in2:hover,
+.github a:hover {
+	/* background: #ffda14; */	
+	background: #ffb84d;
+	-webkit-transition: background 0s !important;
+	-moz-transition: background 0s !important;
+	-o-transition: background 0s !important;
+	transition: background 0s !important;
+}
+
+.github {
+	margin: 0 -43px 0 -28px;
+}
+
+.whatsapp,
+.facebook {
+	margin: 102px 0 0 -28px;
+}
+
+.whatsapp .hexagon-in2,
+.whatsapp a,
+.facebook .hexagon-in2,
+.facebook a {
+	background: #8ea106;
+	-webkit-transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease !important;
+	-moz-transition: background 0.3s ease !important;
+	-o-transition: background 0.3s ease !important;
+	transition: background 0.3s ease !important;
+}
+
+.whatsapp .hexagon-in2:hover,
+.whatsapp a:hover,
+.facebook .hexagon-in2:hover,
+.facebook a:hover {
+	background: #a2b51a;
+	-webkit-transition: background 0s !important;
+	-moz-transition: background 0s !important;
+	-o-transition: background 0s !important;
+	transition: background 0s !important;
+}
+
+.copyright {
+	float: left;
+	width: 204px;
+	height: 200px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 200px -14px 0;
+	padding: 38px 23px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#Idea{
+	text-decoration: none;
+	color: #fff;
+}
+
+#Idea svg {
+	width: 10px;
+}
+
+/* Footer Hexagons & all Styling End */
+
+/* Page Wrapper styling */
+
+#page-wrapper {
+	width: 822px;
+	height: 892px;
+	margin: 0 auto;
+	/* width: 50%; */
+}
+
+#page-wrapper #header {
+	height: 408px;
+	position: relative;
+	padding: 100px 0 0 0;
+	*zoom: 1;
+}
+
+#page-wrapper #header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#page-wrapper #header .header-menu {
+	position: absolute;
+}
+
+#page-wrapper #header .header-menu a:hover,
+#page-wrapper #header .header-menu a.active {
+	padding-top: 60px;
+}
+
+#page-wrapper #header .header-menu a:hover span,
+#page-wrapper #header .header-menu a.active span {
+	margin: 15px;
+}
+
+#page-wrapper #header .header-menu span {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 35px;
+	display: block;
+	margin-top: 15px;
+	-webkit-transition: margin 0.2s ease;
+	-moz-transition: margin 0.2s ease;
+	-o-transition: margin 0.2s ease;
+	transition: margin 0.2s ease;
+}
+
+#page-wrapper #header .header-menu .userpic a:hover {
+	padding-top: 0;
+}
+
+#page-wrapper #main {
+	background: #333333;
+	margin-top: -224px;
+	min-height: 408px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s ease;
+	-moz-transition: height 0.3s ease;
+	-o-transition: height 0.3s ease;
+	transition: height 0.3s ease;
+	*zoom: 1;
+}
+
+#page-wrapper #main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#page-wrapper #main .wrapper {
+	overflow: hidden;
+}
+
+#page-wrapper #main .wrapper .page {
+	margin: 37px 0 0;
+	overflow: hidden;
+}
+
+#page-wrapper #main .page-title {
+	padding-top: 6px;
+	text-align: center;
+	z-index: 10;
+}
+
+#page-wrapper #main .page-title h1 {
+	display: inline-block;
+	position: relative;
+}
+
+#page-wrapper #main .block-title {
+	padding-bottom: 30px;
+}
+
+#page-wrapper #main .content-wrapper {
+	*zoom: 1;
+}
+
+#page-wrapper #main .content-wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#page-wrapper #main .content-wrapper p {
+	margin-bottom: 20px;
+}
+
+#page-wrapper #main .content-wrapper ul {
+	margin-bottom: 20px;
+}
+
+#page-wrapper #footer {
+	margin-top: -220px;
+	*zoom: 1;
+}
+
+#page-wrapper #footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Page Wrapper styling End */
+
+/* Home Page Styling */
+
+#home-page h1 {
+	font-size: 48px;
+	margin: 0 auto;
+	padding-top: 10px;
+	position: relative;
+	text-align: center;
+	width: 580px;
+	z-index: 550;
+	color: #fff;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+	line-height: normal;
+}
+
+#home-page p {
+	width: 530px;
+	font-size: 24px;
+	margin: 0 auto;
+	padding-top: 5px;
+	position: relative;
+	line-height: 31px;
+	text-align: center;
+}
+
+#home-page .job-title {
+	font-size: 24px;
+	text-align: center;
+	width: 150px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 550;
+	line-height: 27px;
+}
+
+#home-page .phone {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	padding-top: 16px;
+	text-align: center;
+}
+
+#home-page .phone span {
+	background: #fff;
+	color: #333;
+	display: block;
+	margin: 22px auto 0;
+	padding-top: 6px;
+	width: 49px;
+	height: 49px;
+	font-size: 35px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#home-page .phone svg {
+	width: 23px;
+}
+
+/* Home Page Styling End */
+
+/* Profile Page Styling */
+
+#profile-page .content-wrapper {
+    padding: 0 32px 195px;
+}
+
+#profile-page em.subtitle {
+    text-align: center;
+    display: block;
+    font-style: italic;
+    font-size: 24px;
+    padding: 65px 0 45px;
+}
+
+#profile-page .content-wrapper .post {
+    padding: 30px 0 40px;
+    *zoom: 1;
+}
+
+#profile-page .content-wrapper .post:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#profile-page .content-wrapper .general-skills {
+    background: #414141;
+    margin: 0 -32px;
+    padding: 30px 32px 40px 32px;
+}
+
+#page-wrapper #main .content-wrapper p {
+    margin-bottom: 20px;
+}
+
+.appreciator {
+	padding-top: 10px;
+	display: table;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.appreciator li {
+	float: left;
+	margin: 0 21px;
+	text-align: center;
+}
+
+#profile-page .content-wrapper .general-skills .skill-item {
+    background: none;
+    float: left;
+    padding: 30px 10px 0;
+    width: 252px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#profile-page .content-wrapper .general-skills .skill-item h3 {
+    padding: 15px 0;
+}
+
+#profile-page .content-wrapper .general-skills .skill-item a:before, #profile-page .content-wrapper .general-skills .skill-item a:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    border-left: 43px solid transparent;
+    border-right: 43px solid transparent;
+}
+
+#profile-page .content-wrapper .technical-skills {
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+#profile-page .content-wrapper .technical-skills .graphic-skills {
+    float: left;
+    width: 341px;
+    margin-right: 70px;
+}
+
+#profile-page .content-wrapper .technical-skills .other-skills {
+    float: left;
+    width: 341px;
+}
+
+#page-wrapper #main .block-title {
+    padding-bottom: 30px;
+}
+
+#profile-page .content-wrapper .technical-skills .progressbar {
+    background: none !important;
+    padding-left: 0 !important;
+    display: block;
+    height: 35px;
+    width: 100%;
+}
+
+
+#profile-page .content-wrapper .technical-skills .value {
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    /* display: none; */
+    font-size: 17px;
+    padding-left: 13px;
+    line-height: 35px;
+    position: relative;
+}
+
+#profile-page .content-wrapper .technical-skills .progress {
+    display: block;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 0;
+    border-radius: 3px;
+}
+
+#profile-page .content-wrapper .technical-skills li {
+    margin-bottom: 1px;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.dark-orange {
+    background: #db5800;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.orange {
+    background: #ff9000;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.yellow {
+    background: #f0c600;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.green {
+    background: #8ea106;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.turquoise {
+    background: #09bf7d;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.blue {
+    background: #049bc7;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.dark-blue {
+    background: #0771ca;
+}
+
+#profile-page .content-wrapper .technical-skills .progress.purple {
+    background: #9054bf;
+}
+
+/* Profile Page Styling End */
+
+/* Resume Page Styling */
+
+#resume-page h2 {
+	margin-bottom: 22px;
+}
+
+#resume-page em.subtitle {
+    text-align: center;
+    display: block;
+    font-style: italic;
+    font-size: 24px;
+    padding: 65px 0 45px;
+}
+
+#resume-page .content-wrapper {
+    padding: 13px 32px 0px;
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+
+#resume-page .employment, #resume-page .education , #resume-page .certification{
+    background: url(../images/bg-employment.gif) repeat-y 124px 0;
+    padding: 10px 0 28px 160px;
+}
+
+#resume-timeline .employment .emp-period, #resume-timeline .employment .edu-period, #resume-timeline .education .emp-period, #resume-timeline .education .edu-period, #resume-timeline .certification .cer-period{
+    display: inline-block;
+    width: 118px;
+    height: 54px;
+	/* background-color: #049bc7; */
+	background-color: var(--portfolio_contact_hexagon_color);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 6px 0 0 -192px;
+}
+
+#resume-page .employment .emp-period, #resume-page .employment .edu-period, #resume-page .education .emp-period, #resume-page .education .edu-period, #resume-timeline .certification .cer-period {
+    font-family: 'Fjalla One', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px 0 15px 9px;
+    position: absolute;
+}
+
+#resume-timeline .employment .emp-period:before, #resume-timeline .employment .edu-period:before, #resume-timeline .education .emp-period:before, #resume-timeline .education .edu-period:before,#resume-timeline .certification .cer-period::before {
+	/* border-left: 19px solid #049bc7; */
+	border-left: 19px solid var(--portfolio_contact_hexagon_color);
+    right: -19px;
+}
+
+#resume-timeline .employment .emp-period:before, #resume-timeline .employment .edu-period:before, #resume-timeline .education .emp-period:before, #resume-timeline .education .edu-period:before, #resume-timeline .certification .cer-period::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+}
+
+#resume-timeline .employment .emp-period:after, #resume-timeline .employment .edu-period:after, #resume-timeline .education .emp-period:after, #resume-timeline .education .edu-period:after,#resume-timeline .certification .cer-period::after {
+    background: url(../images/emp-date-marker.png) no-repeat 0 0;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    top: 19px;
+    right: -46px;
+}
+
+#resume-page .employment .emp-title, #resume-page .employment .edu-title, #resume-page .education .emp-title, #resume-page .education .edu-title, #resume-timeline .certification .cer-title {
+    font-size: 22px;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+#resume-page .employment .emp-company, #resume-page .employment .edu-univer, #resume-page .education .emp-company, #resume-page .education .edu-univer,#resume-timeline .certification .cer-univer {
+    font-size: 22px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    line-height: 34px;
+}
+
+#resume-page .employment .emp-description, #resume-page .employment .edu-description, #resume-page .education .emp-description, #resume-page .education .edu-description {
+    padding: 15px 0 0 0;
+}
+
+#resume-timeline .employment .edu-period, #resume-timeline .education .edu-period {
+    display: inline-block;
+    width: 118px;
+    height: 54px;
+    background-color: #09bf7d;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#resume-timeline .employment .edu-period:before, #resume-timeline .education .edu-period:before {
+    border-left: 19px solid #09bf7d;
+    right: -19px;
+}
+
+#resume-timeline .certification .cer-period {
+    display: inline-block;
+    width: 118px;
+    height: 54px;
+    background-color: var(--profile_resume_hexagon_color);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.edu-metadata, .emp-metadata, .cer-metadata {
+	color: #cccccc;
+	font-weight: bold;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.certification a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#resume-timeline .certification .cer-period:before {
+    border-left: 19px solid var(--profile_resume_hexagon_color);
+    right: -19px;
+}
+
+#resume-page .resume-buttons {
+    padding: 0 0 0px 0;
+    text-align: center;
+}
+
+.cer-title svg {
+	width: 20px;
+}
+
+/* Resume Page Styling End */
+
+/* Contact Page Styling */
+
+#contact-page .contact-address {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 34px 0 18px;
+    text-align: center;
+    z-index: 500;
+}
+
+#contact-page .cotent-wrapper {
+    padding: 0 32px 240px;
+}
+
+#contact-page .cotent-wrapper .contact-details {
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+#contact-page .cotent-wrapper .contact-details .left-col {
+    float: left;
+    width: 494px;
+}
+
+/* #contact-page .cotent-wrapper .contact-details .left-col .form-item:first-child {
+    margin-right: 20px;
+} */
+
+#contact-page .cotent-wrapper .contact-details .left-col .first-child {
+	margin-right: 20px;
+}
+
+#contact-page .cotent-wrapper .contact-details .left-col .form-item {
+    float: left;
+    padding-bottom: 10px;
+}
+
+#contact-page .cotent-wrapper .contact-details .left-col label {
+    display: block;
+    line-height: 30px;
+}
+
+label {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#contact-page .cotent-wrapper .contact-details .left-col input[type=text], #contact-page .cotent-wrapper .contact-details .left-col input[type=email] {
+    padding: 9px 10px 10px;
+    width: 237px;
+}
+input[type=text], input[type=email], textarea {
+    background: #292929;
+    border: 1px solid #615f55;
+    color: #c7c7c7;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contact-page .cotent-wrapper .contact-details .left-col textarea {
+    padding: 10px;
+    resize: none;
+    height: 100px;
+    width: 100%;
+}
+
+#contact-page .cotent-wrapper .contact-details .left-col .form-submit {
+	background: var(--portfolio_contact_hexagon_color);
+	border: none;
+	border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 18px;
+    margin-top: 15px;
+    width: 123px;
+    height: 38px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contact-page .cotent-wrapper .contact-details .right-col {
+    float: right;
+    width: 224px;
+}
+
+#contact-page .cotent-wrapper .contact-details .right-col h2 {
+    font-size: 24px;
+    padding-bottom: 18px;
+}
+
+#contact-page .cotent-wrapper .contact-details .right-col p {
+    font-size: 18px;
+	padding-bottom: 25px;
+}
+
+#contact-page .cotent-wrapper .contact-details .right-col p svg{
+	width: 14px;
+	padding-right: 10px;
+	color: #ffffff;
+}
+
+#contact-page .cotent-wrapper .contact-details .right-col p a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+#contact-page .cotent-wrapper .contact-details .right-col p a:hover {
+    text-decoration: underline;
+}
+
+#contact-page .cotent-wrapper .contact-details .right-col p:before {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 10;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	margin: 500px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.popup .close:hover {
+	color: #06D85F;
+}
+.popup .content {
+	max-height: 30%;
+	overflow: auto;
+	color: black;
+}
+
+/* Contact Page Styling End */
+
+/* Porfolio Page Styling */
+
+#portfolio-page .main {
+	padding: 117px 0 204px 0;
+}
+
+.main .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: .5rem;
+	/* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+	justify-content: center;
+	align-items: center;
+	/* grid-auto-flow: column; */
+}
+.main .card {
+	background: #ffffff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+	color: #333333;
+	border-radius: 2px;
+}
+.main .card-image {
+	background: #333333;
+	display: block;
+	padding-top: 70%;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.main .card-image img {
+	display: block;
+	position: absolute;
+	align-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.main .card-image img {
+	/* -webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4); */
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.main .card-image:hover img {
+	/* -webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1); */
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.image-category {
+	padding: 170px 0 163px 0;
+	display: table;
+	margin: 0 auto;
+	font-size: 20px;
+	color: #ffffff;
+	font-family: 'PT Sans', sans-serif;
+	float: right;
+	overflow: hidden;
+}
+
+.image-category li {
+	/* float: left; */
+	margin: 0 3px 108px 3px;
+	writing-mode: vertical-lr;
+	/* text-orientation: upright; */
+	/* transform: rotate(90deg); */
+}
+
+/* Protfolio Page Styling End */
+
+/* Mobile Styling for responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+	/* Page Wrapper Styling */
+	#page-wrapper{
+		padding-left: 80px;
+		*zoom: -1;
+	}
+	
+	/* Page Wrapper Styling End*/
+
+	/* Hexagons & all Styling */
+
+	.hexagon {
+		width: 185px;
+		/* height: 236px; */
+	}
+	
+	.userpic {
+		margin: -26px 4px 0 -22px;
+	}	
+	.profile,
+	.resume {
+		margin: 66px 0 0 -28px;
+	}
+	.portfolio {
+		margin: 158px 2px 0 -43px;
+	}
+	.contact {
+		margin: 158px 0 0 -25px;
+	}
+
+	.linkedin{
+		margin: -29px 0 0 -43px;
+	}
+
+	.github {
+		margin: -29px 0 0 -32px;
+	}
+
+	.whatsapp{
+		margin: 63px 7px 0 -39px;
+	}
+
+	.facebook {
+		margin: 63px 0 0 -25px;
+	}
+
+	#page-wrapper #footer {
+		margin-top: -180px;
+	}
+
+	#main {
+		margin: 0 0 0 -5px;
+		width: 750px;	
+		min-height: 368px !important;
+	}
+
+	.copyright {
+		font-size: 14px;
+		margin: 150px -14px 0;
+		padding: 38px 40px 0 0;
+	}
+
+	/* Hexagons & all Styling */
+
+	/* Home Page Styling */
+
+	.job-title {
+		margin-top: -4px !important;
+	}
+	#home-page h1 {
+		line-height: 50px;
+	}
+
+	#home-page p{
+		width: 470px;
+	}
+
+	#home-page .phone {
+		padding-top: 8px;
+	}
+
+	/* Home Page Styling End*/
+
+	/* Contact Page Styling */
+
+	.box{
+		width: 70%;
+	}
+	.popup{
+		width: 70%;
+	}
+
+	/* Contact Page Sytling End */
+
+}
+
+/* Mobile Styling for responsiveness End */
