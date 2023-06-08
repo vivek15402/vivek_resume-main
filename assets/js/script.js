@@ -18,7 +18,7 @@ const options = {
 
 var currentDatetime = new Date().toLocaleString('en-IN',options);
 document.querySelector('input[name="Submitted_On"]').value = currentDatetime;
-console.log(currentDatetime)
+// console.log(currentDatetime)
 const scriptURL = "https://script.google.com/macros/s/AKfycbwMzFQSj8zdoo7XQiGCuRaqQ4yMkNzRssfzyB6G-V2LVL1z70hPcNIThzlHxk3kbDS2dg/exec" // enter your public ('access' - 'anyone') deployment URL (NOT test deployment!)
 const form = document.forms['google-sheet'];
 // console.log('0')
